@@ -1,5 +1,4 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import { green, orange } from '@material-ui/core/colors';
 import Makestyyle from './Component/makestyyle';
@@ -17,16 +16,11 @@ const theme = createMuiTheme({
       fontSize: 36,
       marginBottom: 15
     }
-  },
-
- 
+  }
 })
-
-
-function App() {
-
-  return (
-    <ThemeProvider theme={theme}>
+function AppBar() {
+    return (
+        <ThemeProvider theme={theme}>
       <Container maxWidth="xs">
         <div className="App">
           
@@ -54,7 +48,7 @@ function App() {
         </div>
       </Container>
     </ThemeProvider>
-  );
+    )
 }
 
-export default App;
+export default AppBar;
